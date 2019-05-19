@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head >
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Punch A Trumpathon</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Home - Punch A Trumpathon"/>
+<link rel="canonical" href="https://punchatrumpathon.com/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Punch A Trumpathon" />
+<meta property="og:description" content="Home - Punch A Trumpathon" />
+<meta property="og:url" content="https://punchatrumpathon.com/" />
+<meta property="og:site_name" content="Punch A Trumpathon" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Home - Punch A Trumpathon" />
+<meta name="twitter:title" content="Punch A Trumpathon" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "https://punchatrumpathon.com/#organization",
+            "name": "Punch A Trumpathon",
+            "url": "https://punchatrumpathon.com/",
+            "sameAs": []
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://punchatrumpathon.com/#website",
+            "url": "https://punchatrumpathon.com/",
+            "name": "Punch A Trumpathon",
+            "publisher": {
+                "@id": "https://punchatrumpathon.com/#organization"
+            },
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://punchatrumpathon.com/?s={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://punchatrumpathon.com/#webpage",
+            "url": "https://punchatrumpathon.com/",
+            "inLanguage": "en-US",
+            "name": "Punch A Trumpathon",
+            "isPartOf": {
+                "@id": "https://punchatrumpathon.com/#website"
+            },
+            "about": {
+                "@id": "https://punchatrumpathon.com/#organization"
+            },
+            "datePublished": "2018-05-28T07:56:50+00:00",
+            "dateModified": "2018-05-28T23:48:52+00:00",
+            "description": "Home - Punch A Trumpathon"
+        }
+    ]
+}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//code.ionicframework.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Punch A Trumpathon &raquo; Feed" href="https://punchatrumpathon.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Punch A Trumpathon &raquo; Comments Feed" href="https://punchatrumpathon.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"wpemoji":"https:\/\/punchatrumpathon.com\/wp-includes\/js\/wp-emoji.js","twemoji":"https:\/\/punchatrumpathon.com\/wp-includes\/js\/twemoji.js"}};
+			/**
+ * @output wp-includes/js/wp-emoji-loader.js
+ */
+
+( function( window, document, settings ) {
+	var src, ready, ii, tests;
+
+	// Create a canvas element for testing native browser support of emoji.
+	var canvas = document.createElement( 'canvas' );
+	var context = canvas.getContext && canvas.getContext( '2d' );
+
+	/**
+	 * Checks if two sets of Emoji characters render the same visually.
+	 *
+	 * @since 4.9.0
+	 *
+	 * @private
+	 *
+	 * @param {number[]} set1 Set of Emoji character codes.
+	 * @param {number[]} set2 Set of Emoji character codes.
+	 *
+	 * @return {boolean} True if the two sets render the same.
+	 */
+	function emojiSetsRenderIdentically( set1, set2 ) {
+		var stringFromCharCode = String.fromCharCode;
+
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, canvas.width, canvas.height );
+		context.fillText( stringFromCharCode.apply( this, set1 ), 0, 0 );
+		var rendered1 = canvas.toDataURL();
+
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, canvas.width, canvas.height );
+		context.fillText( stringFromCharCode.apply( this, set2 ), 0, 0 );
+		var rendered2 = canvas.toDataURL();
+
+		return rendered1 === rendered2;
+	}
+
+	/**
+	 * Detects if the browser supports rendering emoji or flag emoji.
+	 *
+	 * Flag emoji are a single glyph made of two characters, so some browsers
+	 * (notably, Firefox OS X) don't support them.
+	 *
+	 * @since 4.2.0
+	 *
+	 * @private
+	 *
+	 * @param {string} type Whether to test for support of "flag" or "emoji".
+	 *
+	 * @return {boolean} True if the browser can render emoji, false if it cannot.
+	 */
+	function browserSupportsEmoji( type ) {
+		var isIdentical;
+
+		if ( ! context || ! context.fillText ) {
+			return false;
+		}
+
+		/*
+		 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+		 * it doesn't work when the font is bolder than 500 weight. So, we
+		 * check for bold rendering support to avoid invisible emoji in Chrome.
+		 */
+		context.textBaseline = 'top';
+		context.font = '600 32px Arial';
+
+		switch ( type ) {
+			case 'flag':
+				/*
+				 * Test for UN flag compatibility. This is the least supported of the letter locale flags,
+				 * so gives us an easy test for full support.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly ([U] + [N]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[ 0xD83C, 0xDDFA, 0xD83C, 0xDDF3 ],
+					[ 0xD83C, 0xDDFA, 0x200B, 0xD83C, 0xDDF3 ]
+				);
+
+				if ( isIdentical ) {
+					return false;
+				}
+
+				/*
+				 * Test for English flag compatibility. England is a country in the United Kingdom, it
+				 * does not have a two letter locale code but rather an five letter sub-division code.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly (black flag emoji + [G] + [B] + [E] + [N] + [G]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[ 0xD83C, 0xDFF4, 0xDB40, 0xDC67, 0xDB40, 0xDC62, 0xDB40, 0xDC65, 0xDB40, 0xDC6E, 0xDB40, 0xDC67, 0xDB40, 0xDC7F ],
+					[ 0xD83C, 0xDFF4, 0x200B, 0xDB40, 0xDC67, 0x200B, 0xDB40, 0xDC62, 0x200B, 0xDB40, 0xDC65, 0x200B, 0xDB40, 0xDC6E, 0x200B, 0xDB40, 0xDC67, 0x200B, 0xDB40, 0xDC7F ]
+				);
+
+				return ! isIdentical;
+			case 'emoji':
+				/*
+				 * Love is love.
+				 *
+				 * To test for Emoji 12 support, try to render a new emoji: men holding hands, with different skin
+				 * tone modifiers.
+				 *
+				 * When updating this test for future Emoji releases, ensure that individual emoji that make up the
+				 * sequence come from older emoji standards.
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[0xD83D, 0xDC68, 0xD83C, 0xDFFE, 0x200D, 0xD83E, 0xDD1D, 0x200D, 0xD83D, 0xDC68, 0xD83C, 0xDFFC],
+					[0xD83D, 0xDC68, 0xD83C, 0xDFFE, 0x200B, 0xD83E, 0xDD1D, 0x200B, 0xD83D, 0xDC68, 0xD83C, 0xDFFC]
+				);
+
+				return ! isIdentical;
+		}
+
+		return false;
+	}
+
+	/**
+	 * Adds a script to the head of the document.
+	 *
+	 * @ignore
+	 *
+	 * @since 4.2.0
+	 *
+	 * @param {Object} src The url where the script is located.
+	 * @return {void}
+	 */
+	function addScript( src ) {
+		var script = document.createElement( 'script' );
+
+		script.src = src;
+		script.defer = script.type = 'text/javascript';
+		document.getElementsByTagName( 'head' )[0].appendChild( script );
+	}
+
+	tests = Array( 'flag', 'emoji' );
+
+	settings.supports = {
+		everything: true,
+		everythingExceptFlag: true
+	};
+
+	/*
+	 * Tests the browser support for flag emojis and other emojis, and adjusts the
+	 * support settings accordingly.
+	 */
+	for( ii = 0; ii < tests.length; ii++ ) {
+		settings.supports[ tests[ ii ] ] = browserSupportsEmoji( tests[ ii ] );
+
+		settings.supports.everything = settings.supports.everything && settings.supports[ tests[ ii ] ];
+
+		if ( 'flag' !== tests[ ii ] ) {
+			settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && settings.supports[ tests[ ii ] ];
+		}
+	}
+
+	settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && ! settings.supports.flag;
+
+	// Sets DOMReady to false and assigns a ready function to settings.
+	settings.DOMReady = false;
+	settings.readyCallback = function() {
+		settings.DOMReady = true;
+	};
+
+	// When the browser can not render everything we need to load a polyfill.
+	if ( ! settings.supports.everything ) {
+		ready = function() {
+			settings.readyCallback();
+		};
+
+		/*
+		 * Cross-browser version of adding a dom ready event.
+		 */
+		if ( document.addEventListener ) {
+			document.addEventListener( 'DOMContentLoaded', ready, false );
+			window.addEventListener( 'load', ready, false );
+		} else {
+			window.attachEvent( 'onload', ready );
+			document.attachEvent( 'onreadystatechange', function() {
+				if ( 'complete' === document.readyState ) {
+					settings.readyCallback();
+				}
+			} );
+		}
+
+		src = settings.source || {};
+
+		if ( src.concatemoji ) {
+			addScript( src.concatemoji );
+		} else if ( src.wpemoji && src.twemoji ) {
+			addScript( src.twemoji );
+			addScript( src.wpemoji );
+		}
+	}
+
+} )( window, document, window._wpemojiSettings );
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='showcase-pro-css'  href='https://punchatrumpathon.com/wp-content/themes/showcase-pro/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://punchatrumpathon.com/wp-includes/css/dist/block-library/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://punchatrumpathon.com/wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+<link crossorigin="anonymous" rel='stylesheet' id='google-fonts-css'  href='//fonts.googleapis.com/css?family=Hind%3A400%2C300%2C500%2C600%2C700' type='text/css' media='all' />
+<link rel='stylesheet' id='ionicons-css'  href='//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://punchatrumpathon.com/wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='https://punchatrumpathon.com/wp-includes/js/jquery/jquery-migrate.js'></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='https://punchatrumpathon.com/wp-content/themes/genesis/lib/js/html5shiv.js'></script>
+<![endif]-->
+<link rel='https://api.w.org/' href='https://punchatrumpathon.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://punchatrumpathon.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://punchatrumpathon.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.2" />
+<link rel='shortlink' href='https://punchatrumpathon.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://punchatrumpathon.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpunchatrumpathon.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://punchatrumpathon.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpunchatrumpathon.com%2F&#038;format=xml" />
+<link rel="pingback" href="https://punchatrumpathon.com/xmlrpc.php" />
+<link rel="icon" href="https://punchatrumpathon.com/wp-content/uploads/2018/05/cropped-Icon-512-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://punchatrumpathon.com/wp-content/uploads/2018/05/cropped-Icon-512-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://punchatrumpathon.com/wp-content/uploads/2018/05/cropped-Icon-512-180x180.png" />
+<meta name="msapplication-TileImage" content="https://punchatrumpathon.com/wp-content/uploads/2018/05/cropped-Icon-512-270x270.png" />
+		<style type="text/css" id="wp-custom-css">
+			.widgettitle{
+	font-size:3em;
+	text-align:center;
+	font-family: JWerd,Arial;
+}
+.site-title a{
+	font-family: JWerd,Arial;
+	font-size:1.5em;
+}
+.flexible-widget-area > .wrap{
+	padding-top:5%;
+	padding-bottom:5%;
+}
+
+@font-face {
+    font-family: JWerd;
+    src: url(https://punchatrumpathon.com/JWerd.woff);
+}		</style>
+		</head>
+<body class="home page-template-default page page-id-8 header-full-width full-width-content front-page with-page-header" itemscope itemtype="https://schema.org/WebPage"><div class="site-container"><ul class="genesis-skip-link"><li><a href="#genesis-nav-primary" class="screen-reader-shortcut"> Skip to primary navigation</a></li><li><a href="#genesis-content" class="screen-reader-shortcut"> Skip to content</a></li></ul><header class="site-header" itemscope itemtype="https://schema.org/WPHeader"><div class="wrap"><div class="title-area"><p class="site-title" itemprop="headline"><a href="https://punchatrumpathon.com/">Punch A Trumpathon</a></p></div><nav class="nav-primary" aria-label="Main" itemscope itemtype="https://schema.org/SiteNavigationElement" id="genesis-nav-primary"><ul id="menu-main" class="menu genesis-nav-menu menu-primary js-superfish"><li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item menu-item-11"><a href="https://punchatrumpathon.com/" aria-current="page" data-ps2id-api="true" itemprop="url"><span itemprop="name">Home</span></a></li>
+<li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-38"><a href="https://punchatrumpathon.com/#gettheapp" aria-current="page" data-ps2id-api="true" itemprop="url"><span itemprop="name">Get The App</span></a></li>
+<li id="menu-item-39" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-39"><a href="https://punchatrumpathon.com/#howtoplay" aria-current="page" data-ps2id-api="true" itemprop="url"><span itemprop="name">How To Play</span></a></li>
+</ul></nav></div></header><div class="site-inner"><h2 class="screen-reader-text">Main Content</h2>
+		<div id="front-page-1" class="front-page-1 page-header bg-primary with-background-image" style="background-image: url(https://punchatrumpathon.com/wp-content/uploads/2018/05/bg.jpg)">
+			<div class="wrap">
+				<div id="front-page-1" class="front-page-1 widget-area"><section id="pagesinwidgets_page_section-2" class="widget pagesinwidgets_page_section"><div class="widget-wrap">					<div class="homepage_section">
+						<p style="text-align: center;">Have you ever wanted to Punch President Trump. Well now you can without the side-effects of punching a “world leader”</p>
+						</div>
+					</div></section>
+</div>			</div>
+		</div>
+
+		<div id="front-page-2" class="front-page-2 flexible-widget-area"><div class="wrap"><div class="flexible-widgets widget-area widget-full"><section id="pagesinwidgets_page_section-4" class="widget pagesinwidgets_page_section"><div class="widget-wrap">					<h4 class="widget-title widgettitle">Get The App</h4>
+										<div class="homepage_section">
+						<div id="pl-15"  class="panel-layout" ><div id="pg-15-0"  class="panel-grid panel-has-style" ><div id="gettheapp" class="panel-row-style panel-row-style-for-15-0" ><div id="pgc-15-0-0"  class="panel-grid-cell panel-grid-cell-empty" ></div><div id="pgc-15-0-1"  class="panel-grid-cell" ><div id="panel-15-0-1-0" class="so-panel widget widget_media_image panel-first-child panel-last-child" data-index="0" ><a href="https://itunes.apple.com/us/app/punch-a-trumpathon/id1257401722?ls=1&#038;mt=8"><img width="300" height="104" src="https://punchatrumpathon.com/wp-content/uploads/2018/05/App_Store_available-300x104.png" class="image wp-image-29  attachment-medium size-medium" alt="" style="max-width: 100%; height: auto;" srcset="https://punchatrumpathon.com/wp-content/uploads/2018/05/App_Store_available-300x104.png 300w, https://punchatrumpathon.com/wp-content/uploads/2018/05/App_Store_available-768x266.png 768w, https://punchatrumpathon.com/wp-content/uploads/2018/05/App_Store_available-900x312.png 900w, https://punchatrumpathon.com/wp-content/uploads/2018/05/App_Store_available.png 902w" sizes="(max-width: 300px) 100vw, 300px" /></a></div></div><div id="pgc-15-0-2"  class="panel-grid-cell panel-grid-cell-mobile-last" ><div id="panel-15-0-2-0" class="so-panel widget widget_media_image panel-first-child panel-last-child" data-index="1" ><a href="https://play.google.com/store/apps/details?id=com.punchatrumpathon.app"><img width="300" height="102" src="https://punchatrumpathon.com/wp-content/uploads/2018/05/google-300x102.png" class="image wp-image-30  attachment-medium size-medium" alt="" style="max-width: 100%; height: auto;" srcset="https://punchatrumpathon.com/wp-content/uploads/2018/05/google-300x102.png 300w, https://punchatrumpathon.com/wp-content/uploads/2018/05/google.png 454w" sizes="(max-width: 300px) 100vw, 300px" /></a></div></div><div id="pgc-15-0-3"  class="panel-grid-cell panel-grid-cell-empty" ></div></div></div></div>						</div>
+					</div></section>
+</div></div></div><div id="front-page-3" class="front-page-3 flexible-widget-area"><div class="wrap"><div class="flexible-widgets widget-area widget-full"><section id="pagesinwidgets_page_section-5" class="widget pagesinwidgets_page_section"><div class="widget-wrap">					<h4 class="widget-title widgettitle">How To Play</h4>
+										<div class="homepage_section">
+						<div id="pl-50"  class="panel-layout" ><div id="pg-50-0"  class="panel-grid panel-has-style" ><div class="panels-animation-hide panel-row-style panel-row-style-for-50-0" data-so-animation="{&quot;animation&quot;:&quot;slideInDown&quot;,&quot;duration&quot;:1,&quot;hide&quot;:1,&quot;delay&quot;:0,&quot;event&quot;:&quot;enter&quot;,&quot;offset&quot;:0}" ><div id="pgc-50-0-0"  class="panel-grid-cell" ><div id="panel-50-0-0-0" class="so-panel widget widget_sow-image panel-first-child panel-last-child" data-index="0" ><div class="so-widget-sow-image so-widget-sow-image-default-05ac108fa4e0">
+	<h3 class="widget-title">Tap the screen to punch and gain points</h3>
+<div class="sow-image-container">
+	<img src="https://punchatrumpathon.com/wp-content/uploads/2018/06/Screenshot_20180605-140449_Punch-A-Trumpathon-900x500.jpg" width="900" height="500" sizes="(max-width: 900px) 100vw, 900px" title="Tap the screen to punch and gain points" alt="" 		class="so-widget-image"/>
+</div>
+
+</div></div></div><div id="pgc-50-0-1"  class="panel-grid-cell" ><div id="panel-50-0-1-0" class="so-panel widget widget_sow-image panel-first-child panel-last-child" data-index="1" ><div class="so-widget-sow-image so-widget-sow-image-default-05ac108fa4e0">
+	<h3 class="widget-title">Stop punching &amp; you will lose health</h3>
+<div class="sow-image-container">
+	<img src="https://punchatrumpathon.com/wp-content/uploads/2018/06/Screenshot_20180605-140527_Punch-A-Trumpathon-900x500.jpg" width="900" height="500" sizes="(max-width: 900px) 100vw, 900px" title="Stop punching &amp; you will lose health" alt="" 		class="so-widget-image"/>
+</div>
+
+</div></div></div><div id="pgc-50-0-2"  class="panel-grid-cell" ><div id="panel-50-0-2-0" class="so-panel widget widget_sow-image panel-first-child panel-last-child" data-index="2" ><div class="so-widget-sow-image so-widget-sow-image-default-05ac108fa4e0">
+	<h3 class="widget-title">Enjoy the game</h3>
+<div class="sow-image-container">
+	<img src="https://punchatrumpathon.com/wp-content/uploads/2018/06/Screenshot_20180605-140537_Punch-A-Trumpathon-900x500.jpg" width="900" height="500" sizes="(max-width: 900px) 100vw, 900px" title="Enjoy the game" alt="" 		class="so-widget-image"/>
+</div>
+
+</div></div></div></div></div><div id="pg-50-1"  class="panel-grid panel-has-style" ><div class="panels-animation-hide panel-row-style panel-row-style-for-50-1" data-so-animation="{&quot;animation&quot;:&quot;slideInUp&quot;,&quot;duration&quot;:1,&quot;hide&quot;:1,&quot;delay&quot;:0,&quot;event&quot;:&quot;enter&quot;,&quot;offset&quot;:0}" ><div id="pgc-50-1-0"  class="panel-grid-cell" ><div id="panel-50-1-0-0" class="so-panel widget widget_sow-image panel-first-child panel-last-child" data-index="3" ><div class="so-widget-sow-image so-widget-sow-image-default-05ac108fa4e0">
+	<h3 class="widget-title">Start the game</h3>
+<div class="sow-image-container">
+	<img src="https://punchatrumpathon.com/wp-content/uploads/2018/06/Screenshot_20180604-211422_Punch-A-Trumpathon-900x500.jpg" width="900" height="500" sizes="(max-width: 900px) 100vw, 900px" title="Start the game" alt="" 		class="so-widget-image"/>
+</div>
+
+</div></div></div><div id="pgc-50-1-1"  class="panel-grid-cell" ><div id="panel-50-1-1-0" class="so-panel widget widget_sow-image panel-first-child panel-last-child" data-index="4" ><div class="so-widget-sow-image so-widget-sow-image-default-05ac108fa4e0">
+	<h3 class="widget-title">Play The Game</h3>
+<div class="sow-image-container">
+	<img src="https://punchatrumpathon.com/wp-content/uploads/2018/06/Screenshot_20180604-211445_Punch-A-Trumpathon-900x500.jpg" width="900" height="500" sizes="(max-width: 900px) 100vw, 900px" title="Play The Game" alt="" 		class="so-widget-image"/>
+</div>
+
+</div></div></div><div id="pgc-50-1-2"  class="panel-grid-cell" ><div id="panel-50-1-2-0" class="so-panel widget widget_sow-image panel-first-child panel-last-child" data-index="5" ><div class="so-widget-sow-image so-widget-sow-image-default-05ac108fa4e0">
+	<h3 class="widget-title">Get A High Score</h3>
+<div class="sow-image-container">
+	<img src="https://punchatrumpathon.com/wp-content/uploads/2018/06/Screenshot_20180604-211637_Punch-A-Trumpathon-900x500.jpg" width="900" height="500" sizes="(max-width: 900px) 100vw, 900px" title="Get A High Score" alt="" 		class="so-widget-image"/>
+</div>
+
+</div></div></div></div></div></div>						</div>
+					</div></section>
+</div></div></div><div class="content-sidebar-wrap"><main class="content" id="genesis-content"></main></div></div><footer class="site-footer" itemscope itemtype="https://schema.org/WPFooter"><div class="wrap"><div class="creds"><p>Copyright &copy; 2019 &middot; <a href="https://geckobytegames.com/">Geckybyte Games</a> | <a href="//punchatrumpathon.com/privacy-policy">Privacy Policy</a></p></div><p></p></div></footer></div><script type="text/javascript">document.write('<style type="text/css">.panels-animation-hide{opacity:0}</style>');</script>                <style type="text/css" media="all"
+                       id="siteorigin-panels-layouts-footer">/* Layout 15 */ #pgc-15-0-0 , #pgc-15-0-1 , #pgc-15-0-2 , #pgc-15-0-3 { width:25%;width:calc(25% - ( 0.75 * 30px ) ) } #pl-15 #panel-15-0-1-0 , #pl-15 #panel-15-0-2-0 {  } #pl-15 .so-panel { margin-bottom:30px } #pl-15 .so-panel:last-child { margin-bottom:0px } #pg-15-0.panel-no-style, #pg-15-0.panel-has-style > .panel-row-style { -webkit-align-items:flex-start;align-items:flex-start } @media (max-width:780px){ #pg-15-0.panel-no-style, #pg-15-0.panel-has-style > .panel-row-style { -webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column } #pg-15-0 > .panel-grid-cell , #pg-15-0 > .panel-row-style > .panel-grid-cell { width:100%;margin-right:0 } #pgc-15-0-0 , #pgc-15-0-1 , #pgc-15-0-2 { margin-bottom:30px } #pl-15 .panel-grid-cell { padding:0 } #pl-15 .panel-grid .panel-grid-cell-empty { display:none } #pl-15 .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px }  } /* Layout 50 */ #pgc-50-0-0 , #pgc-50-0-1 , #pgc-50-0-2 , #pgc-50-1-0 , #pgc-50-1-1 , #pgc-50-1-2 { width:33.3333%;width:calc(33.3333% - ( 0.66666666666667 * 30px ) ) } #pl-50 #panel-50-0-0-0 , #pl-50 #panel-50-0-1-0 , #pl-50 #panel-50-0-2-0 , #pl-50 #panel-50-1-0-0 , #pl-50 #panel-50-1-1-0 , #pl-50 #panel-50-1-2-0 {  } #pg-50-0 { margin-bottom:50px } #pl-50 .so-panel { margin-bottom:30px } #pl-50 .so-panel:last-child { margin-bottom:0px } #pg-50-0.panel-no-style, #pg-50-0.panel-has-style > .panel-row-style , #pg-50-1.panel-no-style, #pg-50-1.panel-has-style > .panel-row-style { -webkit-align-items:flex-start;align-items:flex-start } @media (max-width:780px){ #pg-50-0.panel-no-style, #pg-50-0.panel-has-style > .panel-row-style , #pg-50-1.panel-no-style, #pg-50-1.panel-has-style > .panel-row-style { -webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column } #pg-50-0 > .panel-grid-cell , #pg-50-0 > .panel-row-style > .panel-grid-cell , #pg-50-1 > .panel-grid-cell , #pg-50-1 > .panel-row-style > .panel-grid-cell { width:100%;margin-right:0 } #pgc-50-0-0 , #pgc-50-0-1 , #pgc-50-1-0 , #pgc-50-1-1 { margin-bottom:30px } #pl-50 .panel-grid-cell { padding:0 } #pl-50 .panel-grid .panel-grid-cell-empty { display:none } #pl-50 .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px }  } </style><link rel='stylesheet' id='siteorigin-panels-front-css'  href='https://punchatrumpathon.com/wp-content/plugins/siteorigin-panels/css/front-flex.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='sow-image-default-05ac108fa4e0-css'  href='https://punchatrumpathon.com/wp-content/uploads/siteorigin-widgets/sow-image-default-05ac108fa4e0.css' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/punchatrumpathon.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://punchatrumpathon.com/wp-content/plugins/contact-form-7/includes/js/scripts.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mPS2id_params = {"instances":{"mPS2id_instance_0":{"selector":"a[rel='m_PageScroll2id']","autoSelectorMenuLinks":"true","scrollSpeed":1000,"autoScrollSpeed":"true","scrollEasing":"easeInOutQuint","scrollingEasing":"easeOutQuint","pageEndSmoothScroll":"true","stopScrollOnUserAction":"false","autoCorrectScroll":"false","layout":"vertical","offset":"-500","highlightSelector":"","clickedClass":"mPS2id-clicked","targetClass":"mPS2id-target","highlightClass":"mPS2id-highlight","forceSingleHighlight":"false","keepHighlightUntilNext":"false","highlightByNextTarget":"false","appendHash":"false","scrollToHash":"true","scrollToHashForAll":"true","scrollToHashDelay":0,"scrollToHashUseElementData":"true","scrollToHashRemoveUrlHash":"false","disablePluginBelow":0,"adminDisplayWidgetsId":"true","adminTinyMCEbuttons":"true","unbindUnrelatedClickEvents":"false","normalizeAnchorPointTargets":"false"}},"total_instances":"1","shortcode_class":"_ps2id"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://punchatrumpathon.com/wp-content/plugins/page-scroll-to-id/js/page-scroll-to-id.min.js'></script>
+<script type='text/javascript' src='https://punchatrumpathon.com/wp-includes/js/hoverIntent.js'></script>
+<script type='text/javascript' src='https://punchatrumpathon.com/wp-content/themes/genesis/lib/js/menu/superfish.js'></script>
+<script type='text/javascript' src='https://punchatrumpathon.com/wp-content/themes/genesis/lib/js/menu/superfish.args.js'></script>
+<script type='text/javascript' src='https://punchatrumpathon.com/wp-content/themes/genesis/lib/js/skip-links.js'></script>
+<script type='text/javascript' src='https://punchatrumpathon.com/wp-content/themes/showcase-pro/js/global.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var genesis_responsive_menu = {"mainMenu":"Menu","menuIconClass":"ion ion-android-menu","subMenu":"Menu","subMenuIconClass":"ion ion-chevron-left","menuClasses":{"others":[".nav-primary"]}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://punchatrumpathon.com/wp-content/themes/showcase-pro/js/responsive-menus.js'></script>
+<script type='text/javascript' src='https://punchatrumpathon.com/wp-includes/js/wp-embed.js'></script>
+<script type='text/javascript' src='https://punchatrumpathon.com/wp-content/plugins/siteorigin-animations/js/animate.js'></script>
+</body></html>

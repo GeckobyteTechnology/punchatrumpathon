@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="//localhost/jayden/punchatrumpathon/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://localhost/jayden/punchatrumpathon/</loc>
+        <lastmod>2018-05-29T09:48:52+10:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost/jayden/punchatrumpathon/privacy-policy/</loc>
+        <lastmod>2018-06-05T11:44:59+10:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost/jayden/punchatrumpathon/how-to-play/</loc>
+        <lastmod>2018-06-05T14:39:32+10:00</lastmod>
+    </url>
+    <url>
+        <loc>http://localhost/jayden/punchatrumpathon/get-the-app/</loc>
+        <lastmod>2018-06-10T18:18:54+10:00</lastmod>
+    </url>
+</urlset>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head >
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v11.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Privacy Policy - Punch A Trumpathon"/>
+<link rel="canonical" href="https://punchatrumpathon.com/privacy-policy/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Privacy Policy" />
+<meta property="og:description" content="Privacy Policy - Punch A Trumpathon" />
+<meta property="og:url" content="https://punchatrumpathon.com/privacy-policy/" />
+<meta property="og:site_name" content="Punch A Trumpathon" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Privacy Policy - Punch A Trumpathon" />
+<meta name="twitter:title" content="Privacy Policy" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "https://punchatrumpathon.com/#organization",
+            "name": "Punch A Trumpathon",
+            "url": "https://punchatrumpathon.com/",
+            "sameAs": []
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://punchatrumpathon.com/#website",
+            "url": "https://punchatrumpathon.com/",
+            "name": "Punch A Trumpathon",
+            "publisher": {
+                "@id": "https://punchatrumpathon.com/#organization"
+            },
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://punchatrumpathon.com/?s={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://punchatrumpathon.com/privacy-policy/#webpage",
+            "url": "https://punchatrumpathon.com/privacy-policy/",
+            "inLanguage": "en-US",
+            "name": "Privacy Policy",
+            "isPartOf": {
+                "@id": "https://punchatrumpathon.com/#website"
+            },
+            "datePublished": "2018-05-28T08:32:48+00:00",
+            "dateModified": "2018-06-05T01:44:59+00:00",
+            "description": "Privacy Policy - Punch A Trumpathon"
+        }
+    ]
+}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//code.ionicframework.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Punch A Trumpathon &raquo; Feed" href="https://punchatrumpathon.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Punch A Trumpathon &raquo; Comments Feed" href="https://punchatrumpathon.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"wpemoji":"https:\/\/punchatrumpathon.com\/wp-includes\/js\/wp-emoji.js","twemoji":"https:\/\/punchatrumpathon.com\/wp-includes\/js\/twemoji.js"}};
+			/**
+ * @output wp-includes/js/wp-emoji-loader.js
+ */
+
+( function( window, document, settings ) {
+	var src, ready, ii, tests;
+
+	// Create a canvas element for testing native browser support of emoji.
+	var canvas = document.createElement( 'canvas' );
+	var context = canvas.getContext && canvas.getContext( '2d' );
+
+	/**
+	 * Checks if two sets of Emoji characters render the same visually.
+	 *
+	 * @since 4.9.0
+	 *
+	 * @private
+	 *
+	 * @param {number[]} set1 Set of Emoji character codes.
+	 * @param {number[]} set2 Set of Emoji character codes.
+	 *
+	 * @return {boolean} True if the two sets render the same.
+	 */
+	function emojiSetsRenderIdentically( set1, set2 ) {
+		var stringFromCharCode = String.fromCharCode;
+
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, canvas.width, canvas.height );
+		context.fillText( stringFromCharCode.apply( this, set1 ), 0, 0 );
+		var rendered1 = canvas.toDataURL();
+
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, canvas.width, canvas.height );
+		context.fillText( stringFromCharCode.apply( this, set2 ), 0, 0 );
+		var rendered2 = canvas.toDataURL();
+
+		return rendered1 === rendered2;
+	}
+
+	/**
+	 * Detects if the browser supports rendering emoji or flag emoji.
+	 *
+	 * Flag emoji are a single glyph made of two characters, so some browsers
+	 * (notably, Firefox OS X) don't support them.
+	 *
+	 * @since 4.2.0
+	 *
+	 * @private
+	 *
+	 * @param {string} type Whether to test for support of "flag" or "emoji".
+	 *
+	 * @return {boolean} True if the browser can render emoji, false if it cannot.
+	 */
+	function browserSupportsEmoji( type ) {
+		var isIdentical;
+
+		if ( ! context || ! context.fillText ) {
+			return false;
+		}
+
+		/*
+		 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+		 * it doesn't work when the font is bolder than 500 weight. So, we
+		 * check for bold rendering support to avoid invisible emoji in Chrome.
+		 */
+		context.textBaseline = 'top';
+		context.font = '600 32px Arial';
+
+		switch ( type ) {
+			case 'flag':
+				/*
+				 * Test for UN flag compatibility. This is the least supported of the letter locale flags,
+				 * so gives us an easy test for full support.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly ([U] + [N]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[ 0xD83C, 0xDDFA, 0xD83C, 0xDDF3 ],
+					[ 0xD83C, 0xDDFA, 0x200B, 0xD83C, 0xDDF3 ]
+				);
+
+				if ( isIdentical ) {
+					return false;
+				}
+
+				/*
+				 * Test for English flag compatibility. England is a country in the United Kingdom, it
+				 * does not have a two letter locale code but rather an five letter sub-division code.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly (black flag emoji + [G] + [B] + [E] + [N] + [G]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[ 0xD83C, 0xDFF4, 0xDB40, 0xDC67, 0xDB40, 0xDC62, 0xDB40, 0xDC65, 0xDB40, 0xDC6E, 0xDB40, 0xDC67, 0xDB40, 0xDC7F ],
+					[ 0xD83C, 0xDFF4, 0x200B, 0xDB40, 0xDC67, 0x200B, 0xDB40, 0xDC62, 0x200B, 0xDB40, 0xDC65, 0x200B, 0xDB40, 0xDC6E, 0x200B, 0xDB40, 0xDC67, 0x200B, 0xDB40, 0xDC7F ]
+				);
+
+				return ! isIdentical;
+			case 'emoji':
+				/*
+				 * Love is love.
+				 *
+				 * To test for Emoji 12 support, try to render a new emoji: men holding hands, with different skin
+				 * tone modifiers.
+				 *
+				 * When updating this test for future Emoji releases, ensure that individual emoji that make up the
+				 * sequence come from older emoji standards.
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					[0xD83D, 0xDC68, 0xD83C, 0xDFFE, 0x200D, 0xD83E, 0xDD1D, 0x200D, 0xD83D, 0xDC68, 0xD83C, 0xDFFC],
+					[0xD83D, 0xDC68, 0xD83C, 0xDFFE, 0x200B, 0xD83E, 0xDD1D, 0x200B, 0xD83D, 0xDC68, 0xD83C, 0xDFFC]
+				);
+
+				return ! isIdentical;
+		}
+
+		return false;
+	}
+
+	/**
+	 * Adds a script to the head of the document.
+	 *
+	 * @ignore
+	 *
+	 * @since 4.2.0
+	 *
+	 * @param {Object} src The url where the script is located.
+	 * @return {void}
+	 */
+	function addScript( src ) {
+		var script = document.createElement( 'script' );
+
+		script.src = src;
+		script.defer = script.type = 'text/javascript';
+		document.getElementsByTagName( 'head' )[0].appendChild( script );
+	}
+
+	tests = Array( 'flag', 'emoji' );
+
+	settings.supports = {
+		everything: true,
+		everythingExceptFlag: true
+	};
+
+	/*
+	 * Tests the browser support for flag emojis and other emojis, and adjusts the
+	 * support settings accordingly.
+	 */
+	for( ii = 0; ii < tests.length; ii++ ) {
+		settings.supports[ tests[ ii ] ] = browserSupportsEmoji( tests[ ii ] );
+
+		settings.supports.everything = settings.supports.everything && settings.supports[ tests[ ii ] ];
+
+		if ( 'flag' !== tests[ ii ] ) {
+			settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && settings.supports[ tests[ ii ] ];
+		}
+	}
+
+	settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && ! settings.supports.flag;
+
+	// Sets DOMReady to false and assigns a ready function to settings.
+	settings.DOMReady = false;
+	settings.readyCallback = function() {
+		settings.DOMReady = true;
+	};
+
+	// When the browser can not render everything we need to load a polyfill.
+	if ( ! settings.supports.everything ) {
+		ready = function() {
+			settings.readyCallback();
+		};
+
+		/*
+		 * Cross-browser version of adding a dom ready event.
+		 */
+		if ( document.addEventListener ) {
+			document.addEventListener( 'DOMContentLoaded', ready, false );
+			window.addEventListener( 'load', ready, false );
+		} else {
+			window.attachEvent( 'onload', ready );
+			document.attachEvent( 'onreadystatechange', function() {
+				if ( 'complete' === document.readyState ) {
+					settings.readyCallback();
+				}
+			} );
+		}
+
+		src = settings.source || {};
+
+		if ( src.concatemoji ) {
+			addScript( src.concatemoji );
+		} else if ( src.wpemoji && src.twemoji ) {
+			addScript( src.twemoji );
+			addScript( src.wpemoji );
+		}
+	}
+
+} )( window, document, window._wpemojiSettings );
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='showcase-pro-css'  href='https://punchatrumpathon.com/wp-content/themes/showcase-pro/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://punchatrumpathon.com/wp-includes/css/dist/block-library/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://punchatrumpathon.com/wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+<link crossorigin="anonymous" rel='stylesheet' id='google-fonts-css'  href='//fonts.googleapis.com/css?family=Hind%3A400%2C300%2C500%2C600%2C700' type='text/css' media='all' />
+<link rel='stylesheet' id='ionicons-css'  href='//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://punchatrumpathon.com/wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='https://punchatrumpathon.com/wp-includes/js/jquery/jquery-migrate.js'></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='https://punchatrumpathon.com/wp-content/themes/genesis/lib/js/html5shiv.js'></script>
+<![endif]-->
+<link rel='https://api.w.org/' href='https://punchatrumpathon.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://punchatrumpathon.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://punchatrumpathon.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.2" />
+<link rel='shortlink' href='https://punchatrumpathon.com/?p=13' />
+<link rel="alternate" type="application/json+oembed" href="https://punchatrumpathon.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpunchatrumpathon.com%2Fprivacy-policy%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://punchatrumpathon.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpunchatrumpathon.com%2Fprivacy-policy%2F&#038;format=xml" />
+<link rel="pingback" href="https://punchatrumpathon.com/xmlrpc.php" />
+<link rel="icon" href="https://punchatrumpathon.com/wp-content/uploads/2018/05/cropped-Icon-512-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://punchatrumpathon.com/wp-content/uploads/2018/05/cropped-Icon-512-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://punchatrumpathon.com/wp-content/uploads/2018/05/cropped-Icon-512-180x180.png" />
+<meta name="msapplication-TileImage" content="https://punchatrumpathon.com/wp-content/uploads/2018/05/cropped-Icon-512-270x270.png" />
+		<style type="text/css" id="wp-custom-css">
+			.widgettitle{
+	font-size:3em;
+	text-align:center;
+	font-family: JWerd,Arial;
+}
+.site-title a{
+	font-family: JWerd,Arial;
+	font-size:1.5em;
+}
+.flexible-widget-area > .wrap{
+	padding-top:5%;
+	padding-bottom:5%;
+}
+
+@font-face {
+    font-family: JWerd;
+    src: url(https://punchatrumpathon.com/privacy-policy/JWerd.woff);
+}		</style>
+		</head>
+<body class="privacy-policy page-template-default page page-id-13 header-full-width full-width-content" itemscope itemtype="https://schema.org/WebPage"><div class="site-container"><ul class="genesis-skip-link"><li><a href="#genesis-nav-primary" class="screen-reader-shortcut"> Skip to primary navigation</a></li><li><a href="#genesis-content" class="screen-reader-shortcut"> Skip to content</a></li></ul><header class="site-header" itemscope itemtype="https://schema.org/WPHeader"><div class="wrap"><div class="title-area"><p class="site-title" itemprop="headline"><a href="https://punchatrumpathon.com/">Punch A Trumpathon</a></p></div><nav class="nav-primary" aria-label="Main" itemscope itemtype="https://schema.org/SiteNavigationElement" id="genesis-nav-primary"><ul id="menu-main" class="menu genesis-nav-menu menu-primary js-superfish"><li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-11"><a href="https://punchatrumpathon.com/" data-ps2id-api="true" itemprop="url"><span itemprop="name">Home</span></a></li>
+<li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-38"><a href="https://punchatrumpathon.com/#gettheapp" data-ps2id-api="true" itemprop="url"><span itemprop="name">Get The App</span></a></li>
+<li id="menu-item-39" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-39"><a href="https://punchatrumpathon.com/#howtoplay" data-ps2id-api="true" itemprop="url"><span itemprop="name">How To Play</span></a></li>
+</ul></nav></div></header><div class="site-inner"><div class="wrap"><div class="content-sidebar-wrap"><main class="content" id="genesis-content"><article class="post-13 page type-page status-publish entry" itemscope itemtype="https://schema.org/CreativeWork"><header class="entry-header"><h1 class="entry-title" itemprop="headline">Privacy Policy</h1>
+</header><div class="entry-content" itemprop="text"><p>We strive to offer you the many advantages of Internet technology and to provide you an interactive and personalised experience. We may use Personally Identifiable Information (your name, email address, street address, telephone number) subject to the terms of this Privacy Policy.</p>
+<p>We will never rent, trade or sell, your email address to anyone for any reason whatsoever. Period!</p>
+<p>We know that your privacy and personal information is important to you, so that means your privacy is important to us as well. That’s why we have created this policy for your protection and security. Please read it carefully.</p>
+<ul>
+<li>We only ask for personal information that we require.</li>
+<li>We’ll tell you what information we have recorded about you.</li>
+<li>If you would like any personal information about you changed or deleted, just ask.</li>
+<li>We do not rent, trade or sell your personal information to anyone.</li>
+</ul>
+<h3>Who We Are</h3>
+<p>This website and app is owned and operated by Geckobyte Games</p>
+<p>You can reach us via e-mail at: site@punchpresidenttrump.com</p>
+<p>We are an established business with physical premises and our contact details are shown on this Web site. Only our authorised personnel have access to your data.</p>
+<h3>How We Gather Information About Visitors To Our Websites &amp; Apps</h3>
+<h4>Websites</h4>
+<p>How we collect and store information depends on the page you are visiting, the activities in which you choose to participate and the services provided. For example, you may be asked to provide information when you register for access to certain sections of our websites or request certain features such as gameing, magazines, special reports, e-books or when you make a purchase. You may provide information when you participate in sweepstakes and contests, message boards and chat rooms, and other interactive areas of our site.</p>
+<p>We can only identify you personally if you give us this information voluntarily. Like most websites, our web servers automatically record some general information about your visit. The information we record and use for statistical purposes is:</p>
+<ul>
+<li>Your ip &amp; mac address’</li>
+<li>The date and time</li>
+<li>The pages accessed and documents downloaded</li>
+<li>The previous site visited</li>
+<li>The type of browser used</li>
+<li>Your location based on your ip address (other location data if provided)</li>
+</ul>
+<h4>Apps</h4>
+<p>How we collect and store information depends on the app and the section within the app you are using, the activities in which you choose to participate and the services provided. For example, you may be asked to provide information when you register for access to certain sections of our apps or request certain features such as gameing, magazines, special reports, e-books or when you make a purchase. You may provide information when you participate in sweepstakes and contests, message boards and chat rooms, and other interactive areas of our app(s).</p>
+<p>We can only identify you personally if you give us this information voluntarily. Like most apps, our app automatically record some general information about your useof the app. The information we record and use for statistical purposes is:</p>
+<ul>
+<li>Your ip &amp; mac address’</li>
+<li>The date and time</li>
+<li>General activity within the app, including but not limited to games played, scores, social shares, button&#8217;s clicked &amp; behavior analytics data</li>
+<li>Your location based on your ip address (other location data if provided)</li>
+<li>Your Name &amp; or alias&#8217;</li>
+<li>Data form social networks, including but not limited to Facebook &amp; Twitter data</li>
+</ul>
+<h3>Cookies and Session Tracking</h3>
+<p>Whenever you visit a website anywhere, your browser sends information identifying basic information about the nature of your operating system and the browser you are using. We use cookies and session variables to track the popularity of each page on our site and to understand the overall direction of traffic. We do not analyse or record your individual choices. By understanding the general viewing trends of our visitors, we can design our web pages to make your viewing experience simpler and more user-friendly. Learning how you found us helps us understand what you were looking for on the internet and assists us in tailoring our site for your best viewing experience.</p>
+<h3>Your Personal Details</h3>
+<p>We do not know your name,email address unless you give it to us. We only record your personal details if you send us a message, either directly or by registering it on our site. We use it internally within our organisation, and do not sell or rent it to other parties.</p>
+<p>When you register with us as a customer, we ask for your personal details and other information about you. The Personally Identifiable Information you supply is never, ever publicly displayed on our website.</p>
+<p>From time to time we email our customers with news, information and offers relating to our own products and services or those of selected partners. These mailings are always conducted by ourselves and never directly by a third party to ensure the security of your information.</p>
+<h3>Other Non-Personal details</h3>
+<p>When on the site or within the app we will collect details about your device, either computer or phone. This information includes but is not limited to your suburb level location, accelerometer data, device data (type, screen size and processing power), scores, screen touches. social shares, in app purchases (see personal details).</p>
+<p>Any of this data may be collected automatically or for some data you will be asked before the site or app will collect the data. We take the acceptance of these permissions and dialog boxes as acceptance of this section of the primacy policy.</p>
+<h3>How We Use This Information</h3>
+<p>We use your information to improve our website content and to ensure that our products and services are tailored to your current and future needs. This information also allows us to let you know about special offers and new products.</p>
+<p>Personally Identifiable Information collected by Geckobyte Games and its associates may be used (but not limited to) for site administration, troubleshooting, processing of e-commerce transactions, and other communications with you.</p>
+<h3>Who Has Access To Your Information?</h3>
+<p>Your Personally Identifiable Information is used internally and by people or organisations who need to know it as part of working with us in our normal business activities (e.g. sub-contractors, technical support).</p>
+<p>We may need to supply your Personally Identifiable Information to other parties who work with us to provide a product or service to you.</p>
+<p>We may disclose your Personally Identifiable Information in response to a court order, or at times when we believe we are reasonably required to do so by law, in connection with the collection of amounts you may owe to us, and/or to law enforcement authorities whenever we deem it appropriate or necessary. Please note that we may not provide you with notice prior to disclosure in such cases.</p>
+<h3>Notice of Disclosure of Your Credit Information to a Credit Reporting Agency</h3>
+<p>We may give information about you to a credit reporting agency, for the following purposes:</p>
+<ul>
+<li>to obtain a consumer credit report about you, and/or</li>
+<li>to allow the credit reporting agency to create or maintain a credit information file containing information about you in relation to payments which are overdue by more than 60 days, and for which debt collection action has started.</li>
+</ul>
+<h3>Future Variations</h3>
+<p>Geckobyte Games reserves the right to change this policy at any time. If you are concerned about how your information is used, please check this page periodically for changes. Your continued use of this website following the posting of changes to these terms will mean you accept those changes.</p>
+<h3>Corrections</h3>
+<p>If you would like any personal information about you changed or deleted, just send an email to and well make the necessary changes as soon as possible. If you feel that this site is not following its stated information policy, please contact us at the above address or phone number.</p>
+<h3>Links to Other Sites</h3>
+<p>Where this site contains links to other sites, we do not accept responsibility for the privacy practices or the content of such other sites.</p>
+<p>We encourage other suitable websites to include a link back to this site provided you DO NOT use any trademarks or copyright information without permission and that you do not link to this site from a site or in a manner which disparages Geckobyte Games or it’s directors, employees, agents or suppliers. If you would like to arrange a link, please contact site@punchatrumpathon.com</p>
+<h3>Security</h3>
+<p>While we make every effort to keep your information private and away from hackers, it is not possible for us to guarantee your privacy. Please weigh up the risk that your details will be misused by hackers with the benefit of receiving the great information that this site has to offer.</p>
+<h3>Liability Disclaimer</h3>
+<p>We will use all reasonable endeavours to protect and keep your personal information confidential. If any of your personal information is accessed by a third party, whether through our negligence or otherwise, to the extent permitted by law, we disclaim any and all liability to any person or organisation for loss, damage or costs.</p>
+<h3>Governing Law</h3>
+<p>This policy and the use of this website is governed by and construed in accordance with the laws of the State of Queensland, Australia.</p>
+<p>If a dispute arises under this policy, which cannot be resolved by negotiation in a reasonable time, the dispute will be submitted for arbitration in accordance with the rules of the Institute of Arbitrators, Australia in the following location: Brisbane, Australia. Each party shall be responsible for its own costs and fees other than legal fees associated with mediation.</p>
+<p>This statement and the policies outlined herein are not intended to and do not create any contractual or other legal rights in or on behalf of any party.<br />
+All rights not expressly granted herein are reserved.</p>
+</div></article></main></div></div></div><footer class="site-footer" itemscope itemtype="https://schema.org/WPFooter"><div class="wrap"><div class="creds"><p>Copyright &copy; 2019 &middot; <a href="https://geckobytegames.com/">Geckybyte Games</a> | <a href="//punchatrumpathon.com/privacy-policy">Privacy Policy</a></p></div><p></p></div></footer></div><script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/punchatrumpathon.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://punchatrumpathon.com/wp-content/plugins/contact-form-7/includes/js/scripts.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mPS2id_params = {"instances":{"mPS2id_instance_0":{"selector":"a[rel='m_PageScroll2id']","autoSelectorMenuLinks":"true","scrollSpeed":1000,"autoScrollSpeed":"true","scrollEasing":"easeInOutQuint","scrollingEasing":"easeOutQuint","pageEndSmoothScroll":"true","stopScrollOnUserAction":"false","autoCorrectScroll":"false","layout":"vertical","offset":"-500","highlightSelector":"","clickedClass":"mPS2id-clicked","targetClass":"mPS2id-target","highlightClass":"mPS2id-highlight","forceSingleHighlight":"false","keepHighlightUntilNext":"false","highlightByNextTarget":"false","appendHash":"false","scrollToHash":"true","scrollToHashForAll":"true","scrollToHashDelay":0,"scrollToHashUseElementData":"true","scrollToHashRemoveUrlHash":"false","disablePluginBelow":0,"adminDisplayWidgetsId":"true","adminTinyMCEbuttons":"true","unbindUnrelatedClickEvents":"false","normalizeAnchorPointTargets":"false"}},"total_instances":"1","shortcode_class":"_ps2id"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://punchatrumpathon.com/wp-content/plugins/page-scroll-to-id/js/page-scroll-to-id.min.js'></script>
+<script type='text/javascript' src='https://punchatrumpathon.com/wp-includes/js/hoverIntent.js'></script>
+<script type='text/javascript' src='https://punchatrumpathon.com/wp-content/themes/genesis/lib/js/menu/superfish.js'></script>
+<script type='text/javascript' src='https://punchatrumpathon.com/wp-content/themes/genesis/lib/js/menu/superfish.args.js'></script>
+<script type='text/javascript' src='https://punchatrumpathon.com/wp-content/themes/genesis/lib/js/skip-links.js'></script>
+<script type='text/javascript' src='https://punchatrumpathon.com/wp-content/themes/showcase-pro/js/global.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var genesis_responsive_menu = {"mainMenu":"Menu","menuIconClass":"ion ion-android-menu","subMenu":"Menu","subMenuIconClass":"ion ion-chevron-left","menuClasses":{"others":[".nav-primary"]}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://punchatrumpathon.com/wp-content/themes/showcase-pro/js/responsive-menus.js'></script>
+<script type='text/javascript' src='https://punchatrumpathon.com/wp-includes/js/wp-embed.js'></script>
+</body></html>
